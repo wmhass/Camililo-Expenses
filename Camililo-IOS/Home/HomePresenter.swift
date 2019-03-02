@@ -14,7 +14,6 @@ class HomePresenter {
     var displayableExpenses: [ExpenseDisplayable] = []
     let useCase: HomeUseCaseProtocol
     weak var view: HomeView?
-    let categories = ExpenseCategory.allCases.sorted(by: { $0.rawValue < $1.rawValue })
     var fromDate: Date?
     var toDate: Date?
     lazy var dateFormatter: DateFormatter = {
@@ -63,7 +62,6 @@ extension HomePresenter: HomePresentation {
         }
         
         self.view?.set(total: "$ \(String(format: "%.2f", total))")
-        self.view?.set(numberOfCategories: self.categories.count)
         self.view?.reloadCategories()
         self.view?.set(numberOfExpenses: self.displayableExpenses.count)
         self.view?.reloadData()
@@ -88,10 +86,6 @@ extension HomePresenter: HomeViewEventHandler {
         }
     }
     
-    func categoryName(atIndex categoryIndex: Int) -> String {
-        return self.categories[categoryIndex].rawValue
-    }
-    
     func viewDidLoad() {
         self.reloadContent()
     }
@@ -109,16 +103,6 @@ extension HomePresenter: HomeViewEventHandler {
         cell.set(name: expense.name)
         cell.set(value: expense.valueString)
         cell.set(categoryName: expense.categoryName)
-    }
-    
-    func setAlways(categoryIndex: Int, toExpenseAtIndex expenseIndex: IndexPath) {
-        let category = self.categories[categoryIndex]
-        self.setAlways(category: category, toExpenseAtIndex: expenseIndex)
-    }
-    
-    func setThis(categoryIndex: Int, toExpenseAtIndex expenseIndex: IndexPath) {
-        let category = self.categories[categoryIndex]
-        self.setThis(category: category, toExpenseAtIndex: expenseIndex)
     }
     
     func filter(categories: [ExpenseCategory]) {

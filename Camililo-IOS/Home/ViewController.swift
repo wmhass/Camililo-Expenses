@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     var expenses: [Expense] = []
     var eventHandler: HomeViewEventHandler!
     var numberOfExpenses: Int = 0
-    var numberOfCategories: Int = 0
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var periodSummaryLabel: UILabel!
@@ -90,10 +89,6 @@ extension ViewController: HomeView {
         
     }
     
-    func set(numberOfCategories: Int) {
-        self.numberOfCategories = numberOfCategories
-    }
-    
     func set(numberOfExpenses: Int) {
         self.numberOfExpenses = numberOfExpenses
     }
@@ -145,7 +140,6 @@ extension ViewController: UITableViewDelegate {
         
         self.performSegue(withIdentifier: CategoriesFilterSingleSelectionNavigationSegue.identifier, sender: indexPath)
         self.settingCategoryOfIndexPath = indexPath
-        return;
     }
 }
 

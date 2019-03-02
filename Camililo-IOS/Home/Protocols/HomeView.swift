@@ -12,7 +12,6 @@ protocol HomeView: class {
     func set(numberOfExpenses: Int)
     func reloadData()
     func reloadCategories()
-    func set(numberOfCategories: Int)
     func set(total: String)
     func set(period: String)
     func set(minDate: String)

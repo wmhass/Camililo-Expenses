@@ -15,9 +15,6 @@ protocol HomeViewToCategoriesFilterTransition {
 protocol HomeViewEventHandler {
     func viewDidLoad()
     func configure(cell: ExpenseCellProtocol, atIndexPath indexPath: IndexPath)
-    func categoryName(atIndex categoryIndex: Int) -> String
-    func setThis(categoryIndex: Int, toExpenseAtIndex expenseIndex: IndexPath)
-    func setAlways(categoryIndex: Int, toExpenseAtIndex expenseIndex: IndexPath)
     func filter(categories: [ExpenseCategory])
     func prepare(transition: HomeViewToCategoriesFilterTransition)
     func fromDateButtonTapped()
