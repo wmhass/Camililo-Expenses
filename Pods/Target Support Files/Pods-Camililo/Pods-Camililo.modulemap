@@ -1,0 +1,6 @@
+framework module Pods_Camililo {
+  umbrella header "Pods-Camililo-umbrella.h"
+
+  export *
+  module * { export * }
+}
