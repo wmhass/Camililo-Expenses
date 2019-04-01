@@ -119,6 +119,13 @@ extension HomePresenter: HomeViewEventHandler {
         
         self.useCase.set(expenseCategory: category, toExpenseWithId: expense.expenseId)
         self.reloadContent()
+        
+        let message = "\(expense.name) was categorized as \(category.rawValue). Tap here to always apply this category to this expense"
+        self.view?.presentToast(message: message,
+                                completion: { didTap in
+                                    self.setAlways(category: category, toExpenseAtIndex: expenseIndex)
+        })
+        
     }
     
     func setAlways(category: ExpenseCategory, toExpenseAtIndex expenseIndex: IndexPath) {
@@ -126,6 +133,10 @@ extension HomePresenter: HomeViewEventHandler {
         
         self.useCase.set(expenseCategory: category, toExpenseWithId: expense.genericExpenseId)
         self.reloadContent()
+        
+        let message = "\(expense.name) will always be categorized as \(category.rawValue)"
+        self.view?.presentToast(message: message,
+                                completion: { _ in })
     }
     
 }

@@ -19,6 +19,7 @@ enum ExpenseCategory: String, CaseIterable {
     case withdraw = "Withdraw"
     case gym = "Gym"
     case transportation = "Transportation"
+    case travel = "Travel"
     case shipping = "Shipping"
     case cellPhone = "Cell phone"
     case savings = "Savings"

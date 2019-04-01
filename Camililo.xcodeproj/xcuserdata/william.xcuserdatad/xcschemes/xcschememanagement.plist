@@ -12,7 +12,7 @@
 		<key>Camililo-IOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>7</integer>
 		</dict>
 		<key>Camililo.xcscheme</key>
 		<dict>
@@ -22,7 +22,7 @@
 		<key>Camililo.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>6</integer>
 		</dict>
 	</dict>
 </dict>

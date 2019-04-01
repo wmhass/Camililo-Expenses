@@ -85,6 +85,9 @@ extension HomeUseCase: HomeUseCaseProtocol {
         }
 
         let displayableExpenses = expenses.compactMap({ (expense) -> ExpenseDisplay? in
+            if self.categoriesFilter.count > 0 && expense.category == nil {
+                return nil
+            }
             return ExpenseDisplay(expense: expense)
         })
         

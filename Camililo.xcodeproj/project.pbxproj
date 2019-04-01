@@ -29,6 +29,9 @@
 		3D62435921D07BE5007C2677 /* ExpenseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D62435721D07BE5007C2677 /* ExpenseCategory.swift */; };
 		3D62435C21D07BFF007C2677 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D62435B21D07BFF007C2677 /* Expense.swift */; };
 		3D62435D21D07BFF007C2677 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D62435B21D07BFF007C2677 /* Expense.swift */; };
+		3D6F456922519AA2005CE4FB /* CalendarPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F456722519AA2005CE4FB /* CalendarPopUpView.swift */; };
+		3D6F456A22519AA2005CE4FB /* CalendarPopUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F456822519AA2005CE4FB /* CalendarPopUpView.xib */; };
+		3D6F456C22519AD9005CE4FB /* UIView+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F456B22519AD9005CE4FB /* UIView+Corners.swift */; };
 		3D8BDF3521D9675B00254F4A /* HomeEntityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8BDF3421D9675B00254F4A /* HomeEntityGateway.swift */; };
 		3D8BDF3821D9678A00254F4A /* HomeEntityGatewayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8BDF3721D9678A00254F4A /* HomeEntityGatewayProtocol.swift */; };
 		3D8BDF3A21D96A3800254F4A /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8BDF3921D96A3800254F4A /* HomePresenter.swift */; };
@@ -105,6 +108,9 @@
 		3D62435221D07BB7007C2677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D62435721D07BE5007C2677 /* ExpenseCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCategory.swift; sourceTree = "<group>"; };
 		3D62435B21D07BFF007C2677 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		3D6F456722519AA2005CE4FB /* CalendarPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarPopUpView.swift; sourceTree = "<group>"; };
+		3D6F456822519AA2005CE4FB /* CalendarPopUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarPopUpView.xib; sourceTree = "<group>"; };
+		3D6F456B22519AD9005CE4FB /* UIView+Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Corners.swift"; sourceTree = "<group>"; };
 		3D8BDF3421D9675B00254F4A /* HomeEntityGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntityGateway.swift; sourceTree = "<group>"; };
 		3D8BDF3721D9678A00254F4A /* HomeEntityGatewayProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntityGatewayProtocol.swift; sourceTree = "<group>"; };
 		3D8BDF3921D96A3800254F4A /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
@@ -222,6 +228,7 @@
 		3D62434521D07BB5007C2677 /* Camililo-IOS */ = {
 			isa = PBXGroup;
 			children = (
+				3D6F456622519AA2005CE4FB /* CalendarPopUpView */,
 				3DD1457521EA459500884F28 /* CategoriesFilterTableViewController */,
 				3D8BDF3321D9674D00254F4A /* Home */,
 				3D62434621D07BB5007C2677 /* AppDelegate.swift */,
@@ -258,6 +265,16 @@
 				3DEFA81D2207CCBF0055D4A9 /* web_statement.txt */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		3D6F456622519AA2005CE4FB /* CalendarPopUpView */ = {
+			isa = PBXGroup;
+			children = (
+				3D6F456722519AA2005CE4FB /* CalendarPopUpView.swift */,
+				3D6F456822519AA2005CE4FB /* CalendarPopUpView.xib */,
+				3D6F456B22519AD9005CE4FB /* UIView+Corners.swift */,
+			);
+			path = CalendarPopUpView;
 			sourceTree = "<group>";
 		};
 		3D8BDF3321D9674D00254F4A /* Home */ = {
@@ -467,6 +484,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D62435121D07BB7007C2677 /* LaunchScreen.storyboard in Resources */,
+				3D6F456A22519AA2005CE4FB /* CalendarPopUpView.xib in Resources */,
 				3D62434E21D07BB7007C2677 /* Assets.xcassets in Resources */,
 				3D375ADB222B0A670042079D /* accountactivity.csv in Resources */,
 				3D62434C21D07BB5007C2677 /* Main.storyboard in Resources */,
@@ -504,11 +522,15 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Camililo-IOS/Pods-Camililo-IOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/VACalendar/VACalendar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VACalendar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -593,10 +615,12 @@
 				3DD145CC21EA4B3900884F28 /* CategoriesFilterPresentable.swift in Sources */,
 				3D62434721D07BB5007C2677 /* AppDelegate.swift in Sources */,
 				3DD1457721EA45B500884F28 /* CategoriesFilterTableViewController.swift in Sources */,
+				3D6F456922519AA2005CE4FB /* CalendarPopUpView.swift in Sources */,
 				3DD145D821EA506D00884F28 /* UITableViewCell+CategoryItemView.swift in Sources */,
 				3DD145C221EA4B3900884F28 /* CategoriesFilterUseCase.swift in Sources */,
 				3D8BDF4421D96BD300254F4A /* HomeView.swift in Sources */,
 				3D62435921D07BE5007C2677 /* ExpenseCategory.swift in Sources */,
+				3D6F456C22519AD9005CE4FB /* UIView+Corners.swift in Sources */,
 				3DD145C021EA4B3900884F28 /* CategoriesFilterConnector.swift in Sources */,
 				3D8BDF4E21D96EEB00254F4A /* ExpenseCellProtocol.swift in Sources */,
 				3DD145C821EA4B3900884F28 /* CategoriesFilterUseCaseProtocol.swift in Sources */,
@@ -749,9 +773,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C41265367406CA702F5D58F1 /* Pods-Camililo.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D79WER8U7B;
+				DEVELOPMENT_TEAM = R8DRDAPLCP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -760,9 +786,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D51708D611418CC1E40E606A /* Pods-Camililo.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D79WER8U7B;
+				DEVELOPMENT_TEAM = R8DRDAPLCP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;

@@ -15,5 +15,7 @@ target 'Camililo-IOS' do
 
   # Pods for Camililo-IOS
   pod 'RealmSwift'
+  pod 'Toast-Swift', '~> 4.0.0'
+  pod 'VACalendar'
 
 end

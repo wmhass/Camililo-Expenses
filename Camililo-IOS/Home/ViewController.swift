@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class ViewController: UIViewController {
 
@@ -20,6 +21,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var toDateButton: UIButton!
     let connector = HomeConnector()
     var settingCategoryOfIndexPath: IndexPath?
+    
+    private lazy var calendarPopup: CalendarPopUpView = {
+        
+        let translatedFrame = self.view.convert(self.fromDateButton.frame, from: self.fromDateButton.superview)
+        
+        let frame = CGRect(
+            x: 15,
+            y: translatedFrame.maxY + 20,
+            width: view.frame.width - 30,
+            height: 365
+        )
+        let calendar = CalendarPopUpView(frame: frame)
+        
+        calendar.backgroundColor = .clear
+        calendar.layer.shadowColor = UIColor.black.cgColor
+        calendar.layer.shadowOpacity = 0.4
+        calendar.layer.shadowOffset = .zero
+        calendar.layer.shadowRadius = 5
+//        calendar.didSelectDay = { [weak self] date in
+//            self?.setSelectedDate(date)
+//        }
+        
+        return calendar
+    }()
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -59,9 +84,35 @@ class ViewController: UIViewController {
 
 // MARK: - HomeView
 extension ViewController: HomeView {
+    func presentToast(message: String, completion: @escaping (_ didTap: Bool) -> Void) {
+        // toast presented with multiple options and with a completion closure
+        self.view.makeToast(message,
+                            duration: 3,
+                            position: ToastPosition.bottom,
+                            title: nil,
+                            image: nil,
+                            style: ToastManager.shared.style) { didTap in
+                                completion(didTap)
+        }
+    }
     
     func presentDatePicker(title: String, selectedDate: Date?, completion: @escaping (_ newDate: Date?)->Void) {
 
+        self.calendarPopup.didSelectDay = { date in
+            completion(date)
+            self.calendarPopup.removeFromSuperview()
+        }
+        if self.calendarPopup.superview == nil {
+            self.calendarPopup.calendarView.startDate = selectedDate ?? Date()
+            self.calendarPopup.calendarView.selectDates([selectedDate ?? Date()])
+            self.calendarPopup.calendarView.setup()
+            self.view.addSubview(self.calendarPopup)
+        } else {
+            self.calendarPopup.removeFromSuperview()
+        }
+        return
+        
+        
         let datePicker = UIDatePicker()
         datePicker.datePickerMode = .date
         datePicker.frame.size.width = self.view.frame.width
@@ -158,24 +209,7 @@ extension ViewController: CategoriesSingleSelectionPresenterDelegate {
         guard let indexPath = self.settingCategoryOfIndexPath else {
             return
         }
-        
-        let editRadiusAlert = UIAlertController(title: "", message: "Select category", preferredStyle: .actionSheet)
-        
-        let selectAction = UIAlertAction(title: "Only this", style: .default) { action in
-            self.eventHandler?.setThis(category: category, toExpenseAtIndex: indexPath)
-        }
-        
-        let selectAlwaysAction = UIAlertAction(title: "Always", style: .default) { action in
-            self.eventHandler?.setAlways(category: category, toExpenseAtIndex: indexPath)
-        }
-        
-        editRadiusAlert.addAction(selectAction)
-        editRadiusAlert.addAction(selectAlwaysAction)
-        editRadiusAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        
-//        delay(0.5) {
-            self.present(editRadiusAlert, animated: true)
-//        }
+        self.eventHandler?.setThis(category: category, toExpenseAtIndex: indexPath)
     }
 }
 

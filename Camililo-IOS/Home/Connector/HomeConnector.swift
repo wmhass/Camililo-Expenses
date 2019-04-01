@@ -11,7 +11,8 @@ import Foundation
 struct HomeConnector {
     
     func connect(homeViewController: ViewController) {
-        let parser = CSVExpenseParser()
+//        let parser = CSVExpenseParser()
+        let parser = WebStatementExpenseParser()
         let entityGateway = HomeEntityGateway(parser: parser)
         let useCase = HomeUseCase(entityGateway: entityGateway)
         let presenter = HomePresenter(useCase: useCase)

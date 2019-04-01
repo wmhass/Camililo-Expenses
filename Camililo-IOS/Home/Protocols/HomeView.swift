@@ -17,4 +17,6 @@ protocol HomeView: class {
     func set(minDate: String)
     func set(maxDate: String)
     func presentDatePicker(title: String, selectedDate: Date?, completion: @escaping(_ newDate: Date?)->Void)
+    
+    func presentToast(message: String, completion: @escaping (_ didTap: Bool) -> Void)
 }
