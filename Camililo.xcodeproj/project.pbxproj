@@ -19,6 +19,20 @@
 		3D375ADB222B0A670042079D /* accountactivity.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3D375ADA222B0A670042079D /* accountactivity.csv */; };
 		3D375ADF222B0E540042079D /* CategoriesFilterSingleSelectionNavigationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D375ADE222B0E540042079D /* CategoriesFilterSingleSelectionNavigationSegue.swift */; };
 		3D375AE1222B0E890042079D /* HomeViewToCategoriesSingleSelectionTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D375AE0222B0E890042079D /* HomeViewToCategoriesSingleSelectionTransition.swift */; };
+		3D3A1D052259257900EFE799 /* Budget.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3A1D042259257900EFE799 /* Budget.storyboard */; };
+		3D3A1D092259269000EFE799 /* BudgetSetupModalPresentationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3A1D082259269000EFE799 /* BudgetSetupModalPresentationSegue.swift */; };
+		3D3A1D0C225926B600EFE799 /* BudgetSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3A1D0B225926B600EFE799 /* BudgetSetupViewController.swift */; };
+		3D3A1D16225928D900EFE799 /* BudgetSetupUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3A1D10225928D800EFE799 /* BudgetSetupUseCaseProtocol.swift */; };
+		3D3A1D17225928D900EFE799 /* BudgetSetupViewEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3A1D11225928D800EFE799 /* BudgetSetupViewEventHandler.swift */; };
+		3D3A1D18225928D900EFE799 /* BudgetSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3A1D12225928D800EFE799 /* BudgetSetupView.swift */; };
+		3D3A1D19225928D900EFE799 /* BudgetSetupPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3A1D13225928D900EFE799 /* BudgetSetupPresentable.swift */; };
+		3D3A1D1A225928D900EFE799 /* BudgetSetupNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3A1D14225928D900EFE799 /* BudgetSetupNavigation.swift */; };
+		3D3A1D1B225928D900EFE799 /* BudgetSetupEntityGatewayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3A1D15225928D900EFE799 /* BudgetSetupEntityGatewayProtocol.swift */; };
+		3D3A1D21225928F900EFE799 /* BudgetSetupUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3A1D1C225928F900EFE799 /* BudgetSetupUseCase.swift */; };
+		3D3A1D22225928F900EFE799 /* BudgetSetupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3A1D1D225928F900EFE799 /* BudgetSetupPresenter.swift */; };
+		3D3A1D23225928F900EFE799 /* BudgetSetupWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3A1D1E225928F900EFE799 /* BudgetSetupWireframe.swift */; };
+		3D3A1D24225928F900EFE799 /* BudgetSetupEntityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3A1D1F225928F900EFE799 /* BudgetSetupEntityGateway.swift */; };
+		3D3A1D25225928F900EFE799 /* BudgetSetupConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3A1D20225928F900EFE799 /* BudgetSetupConnector.swift */; };
 		3D62433A21D07B8E007C2677 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D62433921D07B8E007C2677 /* main.swift */; };
 		3D62434721D07BB5007C2677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D62434621D07BB5007C2677 /* AppDelegate.swift */; };
 		3D62434921D07BB5007C2677 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D62434821D07BB5007C2677 /* ViewController.swift */; };
@@ -97,6 +111,20 @@
 		3D375ADA222B0A670042079D /* accountactivity.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = accountactivity.csv; sourceTree = "<group>"; };
 		3D375ADE222B0E540042079D /* CategoriesFilterSingleSelectionNavigationSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesFilterSingleSelectionNavigationSegue.swift; sourceTree = "<group>"; };
 		3D375AE0222B0E890042079D /* HomeViewToCategoriesSingleSelectionTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewToCategoriesSingleSelectionTransition.swift; sourceTree = "<group>"; };
+		3D3A1D042259257900EFE799 /* Budget.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Budget.storyboard; sourceTree = "<group>"; };
+		3D3A1D082259269000EFE799 /* BudgetSetupModalPresentationSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetSetupModalPresentationSegue.swift; sourceTree = "<group>"; };
+		3D3A1D0B225926B600EFE799 /* BudgetSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetSetupViewController.swift; sourceTree = "<group>"; };
+		3D3A1D10225928D800EFE799 /* BudgetSetupUseCaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetSetupUseCaseProtocol.swift; sourceTree = "<group>"; };
+		3D3A1D11225928D800EFE799 /* BudgetSetupViewEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetSetupViewEventHandler.swift; sourceTree = "<group>"; };
+		3D3A1D12225928D800EFE799 /* BudgetSetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetSetupView.swift; sourceTree = "<group>"; };
+		3D3A1D13225928D900EFE799 /* BudgetSetupPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetSetupPresentable.swift; sourceTree = "<group>"; };
+		3D3A1D14225928D900EFE799 /* BudgetSetupNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetSetupNavigation.swift; sourceTree = "<group>"; };
+		3D3A1D15225928D900EFE799 /* BudgetSetupEntityGatewayProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetSetupEntityGatewayProtocol.swift; sourceTree = "<group>"; };
+		3D3A1D1C225928F900EFE799 /* BudgetSetupUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetSetupUseCase.swift; sourceTree = "<group>"; };
+		3D3A1D1D225928F900EFE799 /* BudgetSetupPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetSetupPresenter.swift; sourceTree = "<group>"; };
+		3D3A1D1E225928F900EFE799 /* BudgetSetupWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetSetupWireframe.swift; sourceTree = "<group>"; };
+		3D3A1D1F225928F900EFE799 /* BudgetSetupEntityGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetSetupEntityGateway.swift; sourceTree = "<group>"; };
+		3D3A1D20225928F900EFE799 /* BudgetSetupConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetSetupConnector.swift; sourceTree = "<group>"; };
 		3D62433621D07B8E007C2677 /* Camililo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Camililo; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D62433921D07B8E007C2677 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3D62434421D07BB5007C2677 /* Camililo-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Camililo-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +222,59 @@
 			path = Connector;
 			sourceTree = "<group>";
 		};
+		3D3A1D032259256800EFE799 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3D62434A21D07BB5007C2677 /* Main.storyboard */,
+				3D3A1D042259257900EFE799 /* Budget.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3D3A1D062259262200EFE799 /* Budget */ = {
+			isa = PBXGroup;
+			children = (
+				3D3A1D072259267200EFE799 /* BudgetSetup */,
+			);
+			path = Budget;
+			sourceTree = "<group>";
+		};
+		3D3A1D072259267200EFE799 /* BudgetSetup */ = {
+			isa = PBXGroup;
+			children = (
+				3D3A1D0F2259284900EFE799 /* Protocols */,
+				3D3A1D0A225926A100EFE799 /* Segue */,
+				3D3A1D0B225926B600EFE799 /* BudgetSetupViewController.swift */,
+				3D3A1D20225928F900EFE799 /* BudgetSetupConnector.swift */,
+				3D3A1D1F225928F900EFE799 /* BudgetSetupEntityGateway.swift */,
+				3D3A1D1D225928F900EFE799 /* BudgetSetupPresenter.swift */,
+				3D3A1D1C225928F900EFE799 /* BudgetSetupUseCase.swift */,
+				3D3A1D1E225928F900EFE799 /* BudgetSetupWireframe.swift */,
+			);
+			path = BudgetSetup;
+			sourceTree = "<group>";
+		};
+		3D3A1D0A225926A100EFE799 /* Segue */ = {
+			isa = PBXGroup;
+			children = (
+				3D3A1D082259269000EFE799 /* BudgetSetupModalPresentationSegue.swift */,
+			);
+			path = Segue;
+			sourceTree = "<group>";
+		};
+		3D3A1D0F2259284900EFE799 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3D3A1D15225928D900EFE799 /* BudgetSetupEntityGatewayProtocol.swift */,
+				3D3A1D14225928D900EFE799 /* BudgetSetupNavigation.swift */,
+				3D3A1D13225928D900EFE799 /* BudgetSetupPresentable.swift */,
+				3D3A1D10225928D800EFE799 /* BudgetSetupUseCaseProtocol.swift */,
+				3D3A1D12225928D800EFE799 /* BudgetSetupView.swift */,
+				3D3A1D11225928D800EFE799 /* BudgetSetupViewEventHandler.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		3D62432D21D07B8E007C2677 = {
 			isa = PBXGroup;
 			children = (
@@ -228,11 +309,12 @@
 		3D62434521D07BB5007C2677 /* Camililo-IOS */ = {
 			isa = PBXGroup;
 			children = (
+				3D3A1D062259262200EFE799 /* Budget */,
+				3D3A1D032259256800EFE799 /* Storyboards */,
 				3D6F456622519AA2005CE4FB /* CalendarPopUpView */,
 				3DD1457521EA459500884F28 /* CategoriesFilterTableViewController */,
 				3D8BDF3321D9674D00254F4A /* Home */,
 				3D62434621D07BB5007C2677 /* AppDelegate.swift */,
-				3D62434A21D07BB5007C2677 /* Main.storyboard */,
 				3D62434D21D07BB7007C2677 /* Assets.xcassets */,
 				3D62434F21D07BB7007C2677 /* LaunchScreen.storyboard */,
 				3D62435221D07BB7007C2677 /* Info.plist */,
@@ -488,6 +570,7 @@
 				3D62434E21D07BB7007C2677 /* Assets.xcassets in Resources */,
 				3D375ADB222B0A670042079D /* accountactivity.csv in Resources */,
 				3D62434C21D07BB5007C2677 /* Main.storyboard in Resources */,
+				3D3A1D052259257900EFE799 /* Budget.storyboard in Resources */,
 				3DEFA81E2207CCBF0055D4A9 /* web_statement.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,9 +679,11 @@
 				3D8BDF3C21D96A6900254F4A /* HomeUseCaseProtocol.swift in Sources */,
 				3D8BDF5021D972EA00254F4A /* ExpenseCategoryDisplay.swift in Sources */,
 				3D8BDF4021D96AB200254F4A /* HomePresentation.swift in Sources */,
+				3D3A1D19225928D900EFE799 /* BudgetSetupPresentable.swift in Sources */,
 				3D8BDF3821D9678A00254F4A /* HomeEntityGatewayProtocol.swift in Sources */,
 				3D375AD1222B085F0042079D /* CSVExpenseParser.swift in Sources */,
 				3DD1459F21EA476600884F28 /* CategoriesFilterMultiSelectionNavigationSegue.swift in Sources */,
+				3D3A1D1B225928D900EFE799 /* BudgetSetupEntityGatewayProtocol.swift in Sources */,
 				3DD145BC21EA4B3900884F28 /* CategoriesFilterWireframe.swift in Sources */,
 				3D8BDF4921D96C8D00254F4A /* ExpenseDisplayable.swift in Sources */,
 				3D375ACE222B084F0042079D /* WebStatementExpenseParser.swift in Sources */,
@@ -608,23 +693,34 @@
 				3DEFA81C2207CC810055D4A9 /* HomeWebPageStatementEntityGateway.swift in Sources */,
 				3D375AE1222B0E890042079D /* HomeViewToCategoriesSingleSelectionTransition.swift in Sources */,
 				3D8BDF3521D9675B00254F4A /* HomeEntityGateway.swift in Sources */,
+				3D3A1D24225928F900EFE799 /* BudgetSetupEntityGateway.swift in Sources */,
+				3D3A1D16225928D900EFE799 /* BudgetSetupUseCaseProtocol.swift in Sources */,
 				3D62435D21D07BFF007C2677 /* Expense.swift in Sources */,
 				3D375AD5222B087A0042079D /* ExpenseParser.swift in Sources */,
 				3DD145CE21EA4B3900884F28 /* CategoriesFilterEntityGatewayProtocol.swift in Sources */,
 				3D62434921D07BB5007C2677 /* ViewController.swift in Sources */,
 				3DD145CC21EA4B3900884F28 /* CategoriesFilterPresentable.swift in Sources */,
+				3D3A1D21225928F900EFE799 /* BudgetSetupUseCase.swift in Sources */,
+				3D3A1D25225928F900EFE799 /* BudgetSetupConnector.swift in Sources */,
 				3D62434721D07BB5007C2677 /* AppDelegate.swift in Sources */,
+				3D3A1D092259269000EFE799 /* BudgetSetupModalPresentationSegue.swift in Sources */,
+				3D3A1D23225928F900EFE799 /* BudgetSetupWireframe.swift in Sources */,
 				3DD1457721EA45B500884F28 /* CategoriesFilterTableViewController.swift in Sources */,
 				3D6F456922519AA2005CE4FB /* CalendarPopUpView.swift in Sources */,
 				3DD145D821EA506D00884F28 /* UITableViewCell+CategoryItemView.swift in Sources */,
+				3D3A1D18225928D900EFE799 /* BudgetSetupView.swift in Sources */,
 				3DD145C221EA4B3900884F28 /* CategoriesFilterUseCase.swift in Sources */,
 				3D8BDF4421D96BD300254F4A /* HomeView.swift in Sources */,
+				3D3A1D0C225926B600EFE799 /* BudgetSetupViewController.swift in Sources */,
 				3D62435921D07BE5007C2677 /* ExpenseCategory.swift in Sources */,
 				3D6F456C22519AD9005CE4FB /* UIView+Corners.swift in Sources */,
 				3DD145C021EA4B3900884F28 /* CategoriesFilterConnector.swift in Sources */,
 				3D8BDF4E21D96EEB00254F4A /* ExpenseCellProtocol.swift in Sources */,
 				3DD145C821EA4B3900884F28 /* CategoriesFilterUseCaseProtocol.swift in Sources */,
+				3D3A1D1A225928D900EFE799 /* BudgetSetupNavigation.swift in Sources */,
 				3DD145C421EA4B3900884F28 /* CategoriesFilterPresenter.swift in Sources */,
+				3D3A1D17225928D900EFE799 /* BudgetSetupViewEventHandler.swift in Sources */,
+				3D3A1D22225928F900EFE799 /* BudgetSetupPresenter.swift in Sources */,
 				3DD145CA21EA4B3900884F28 /* CategoriesFilterViewEventHandler.swift in Sources */,
 				3D375AD9222B08E00042079D /* HomeConnector.swift in Sources */,
 				3DD145D221EA4B3900884F28 /* CategoriesFilterNavigation.swift in Sources */,
