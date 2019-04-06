@@ -1,0 +1,117 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "1C1-vT-hz3"; */
+"1C1-vT-hz3.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Barcode"; ObjectID = "3aN-s0-rOc"; */
+"3aN-s0-rOc.placeholder" = "Barcode";
+
+/* Class = "UIBarButtonItem"; title = "Apply"; ObjectID = "5BO-Cn-VFZ"; */
+"5BO-Cn-VFZ.title" = "Apply";
+
+/* Class = "UITextField"; placeholder = "Price"; ObjectID = "65s-lt-8ZM"; */
+"65s-lt-8ZM.placeholder" = "Price";
+
+/* Class = "UITextField"; placeholder = "Brand"; ObjectID = "6vy-B4-x7d"; */
+"6vy-B4-x7d.placeholder" = "Brand";
+
+/* Class = "UITextField"; placeholder = "Barcode"; ObjectID = "9pq-gT-WdT"; */
+"9pq-gT-WdT.placeholder" = "Barcode";
+
+/* Class = "UILabel"; text = "from"; ObjectID = "AgP-4K-X9l"; */
+"AgP-4K-X9l.text" = "from";
+
+/* Class = "UIBarButtonItem"; title = "Filter"; ObjectID = "Fdg-fQ-Ulf"; */
+"Fdg-fQ-Ulf.title" = "Filter";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "IXO-LG-8YT"; */
+"IXO-LG-8YT.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "JsH-L0-MV2"; */
+"JsH-L0-MV2.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "LvK-Zt-yHZ"; */
+"LvK-Zt-yHZ.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Mon, Jan 10 2018"; ObjectID = "MnU-Ns-uDH"; */
+"MnU-Ns-uDH.normalTitle" = "Mon, Jan 10 2018";
+
+/* Class = "UINavigationItem"; title = "Categories FIlter"; ObjectID = "NQM-om-bXS"; */
+"NQM-om-bXS.title" = "Categories FIlter";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "OOs-NH-Paj"; */
+"OOs-NH-Paj.normalTitle" = "Save";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "WLQ-QE-Fpc"; */
+"WLQ-QE-Fpc.placeholder" = "Name";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "ZxL-Js-bfn"; */
+"ZxL-Js-bfn.normalTitle" = "Cancel";
+
+/* Class = "UITabBarItem"; title = "Purchase"; ObjectID = "bNg-jC-fLa"; */
+"bNg-jC-fLa.title" = "Purchase";
+
+/* Class = "UILabel"; text = "Categories"; ObjectID = "cbq-gZ-Pwg"; */
+"cbq-gZ-Pwg.text" = "Categories";
+
+/* Class = "UIBarButtonItem"; title = "Clear selection"; ObjectID = "cpa-Ez-ex2"; */
+"cpa-Ez-ex2.title" = "Clear selection";
+
+/* Class = "UIBarButtonItem"; title = "Select all"; ObjectID = "dcv-aj-YcQ"; */
+"dcv-aj-YcQ.title" = "Select all";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "gh8-ig-fsj"; */
+"gh8-ig-fsj.normalTitle" = "Save";
+
+/* Class = "UITabBarItem"; title = "Expenses"; ObjectID = "hPP-dI-sc6"; */
+"hPP-dI-sc6.title" = "Expenses";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "iPM-Cy-4Bv"; */
+"iPM-Cy-4Bv.placeholder" = "Name";
+
+/* Class = "UINavigationItem"; title = "Product"; ObjectID = "iy2-uR-h9E"; */
+"iy2-uR-h9E.title" = "Product";
+
+/* Class = "UITableViewController"; title = "Categories FIlter"; ObjectID = "k2i-c9-xOE"; */
+"k2i-c9-xOE.title" = "Categories FIlter";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "lVY-xw-cLL"; */
+"lVY-xw-cLL.text" = "to";
+
+/* Class = "UITextField"; placeholder = "Date"; ObjectID = "ldS-TO-Slw"; */
+"ldS-TO-Slw.placeholder" = "Date";
+
+/* Class = "UITextField"; placeholder = "Brand"; ObjectID = "mRG-KN-rJf"; */
+"mRG-KN-rJf.placeholder" = "Brand";
+
+/* Class = "UITextField"; placeholder = "Unit"; ObjectID = "mzh-N5-qDJ"; */
+"mzh-N5-qDJ.placeholder" = "Unit";
+
+/* Class = "UIButton"; normalTitle = "Mon, Jan 10 2018"; ObjectID = "nHJ-Zy-r9U"; */
+"nHJ-Zy-r9U.normalTitle" = "Mon, Jan 10 2018";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "o6S-tP-aAH"; */
+"o6S-tP-aAH.normalTitle" = "Cancel";
+
+/* Class = "UITextField"; placeholder = "Quantity"; ObjectID = "oJi-pX-FZg"; */
+"oJi-pX-FZg.placeholder" = "Quantity";
+
+/* Class = "UINavigationItem"; title = "Purchase"; ObjectID = "qIt-3e-VPs"; */
+"qIt-3e-VPs.title" = "Purchase";
+
+/* Class = "UILabel"; text = "Total:"; ObjectID = "rpl-Ck-ESs"; */
+"rpl-Ck-ESs.text" = "Total:";
+
+/* Class = "UITextField"; placeholder = "Supermarket"; ObjectID = "wW4-qh-Bk3"; */
+"wW4-qh-Bk3.placeholder" = "Supermarket";
+
+/* Class = "UIBarButtonItem"; title = "Close"; ObjectID = "yOt-rm-f5c"; */
+"yOt-rm-f5c.title" = "Close";
+
+/* Class = "UILabel"; text = "(7 days - avg. $10/day)"; ObjectID = "ydS-nv-Rdy"; */
+"ydS-nv-Rdy.text" = "(7 days - avg. $10/day)";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "zLq-jw-X0R"; */
+"zLq-jw-X0R.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Product"; ObjectID = "zSf-m8-034"; */
+"zSf-m8-034.title" = "Product";
