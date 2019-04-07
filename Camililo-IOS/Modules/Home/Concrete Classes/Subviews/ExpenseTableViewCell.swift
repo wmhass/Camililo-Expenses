@@ -14,9 +14,7 @@ class ExpenseTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var valueLabel: UILabel!
     @IBOutlet weak var categoryLabel: UILabel!
-    
-    static var defaultReuseIdentifier = "ExpenseTableViewCell"
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }

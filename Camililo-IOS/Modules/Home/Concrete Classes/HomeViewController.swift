@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  Camililo-IOS
 //
 //  Created by William Hass on 2018-12-23.
@@ -9,7 +9,7 @@
 import UIKit
 import Toast_Swift
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     var expenses: [Expense] = []
     var eventHandler: HomeViewEventHandler!
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.connector.connect(homeViewController: self)
+        self.connector.configure(view: self)
     }
     
     override func viewDidLoad() {
@@ -83,7 +83,7 @@ class ViewController: UIViewController {
 }
 
 // MARK: - HomeView
-extension ViewController: HomeView {
+extension HomeViewController: HomeView {
     func presentToast(message: String, completion: @escaping (_ didTap: Bool) -> Void) {
         // toast presented with multiple options and with a completion closure
         self.view.makeToast(message,
@@ -166,14 +166,14 @@ extension ViewController: HomeView {
 }
 
 // MARK: - UITableViewDataSource
-extension ViewController: UITableViewDataSource {
+extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.numberOfExpenses
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: ExpenseTableViewCell.defaultReuseIdentifier, for: indexPath) as! ExpenseTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: ExpenseTableViewCell.reuseId, for: indexPath) as! ExpenseTableViewCell
         
         self.eventHandler?.configure(cell: cell, atIndexPath: indexPath)
         
@@ -184,7 +184,7 @@ extension ViewController: UITableViewDataSource {
 }
 
 // MARK: - UITableViewDelegate
-extension ViewController: UITableViewDelegate {
+extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
@@ -195,7 +195,7 @@ extension ViewController: UITableViewDelegate {
 }
 
 // MARK: - CategoriesFilterPresenterDelegate
-extension ViewController: CategoriesFilterPresenterDelegate {
+extension HomeViewController: CategoriesFilterPresenterDelegate {
     
     func filter(categories: [ExpenseCategory]) {
         self.eventHandler.filter(categories: categories)
@@ -204,7 +204,7 @@ extension ViewController: CategoriesFilterPresenterDelegate {
 }
 
 // MARK: - CategoriesSingleSelectionPresenterDelegate
-extension ViewController: CategoriesSingleSelectionPresenterDelegate {
+extension HomeViewController: CategoriesSingleSelectionPresenterDelegate {
     func selected(category: ExpenseCategory) {
         guard let indexPath = self.settingCategoryOfIndexPath else {
             return

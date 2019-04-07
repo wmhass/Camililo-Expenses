@@ -10,7 +10,7 @@ import Foundation
 
 struct HomeConnector {
     
-    func connect(homeViewController: ViewController) {
+    func configure(view: HomeViewController) {
 //        let parser = CSVExpenseParser()
         let parser = WebStatementExpenseParser()
         let entityGateway = HomeEntityGateway(parser: parser)
@@ -18,8 +18,8 @@ struct HomeConnector {
         let presenter = HomePresenter(useCase: useCase)
 
         useCase.presenter = presenter
-        presenter.view = homeViewController
-        homeViewController.eventHandler = presenter
+        presenter.view = view
+        view.eventHandler = presenter
     }
     
 }
