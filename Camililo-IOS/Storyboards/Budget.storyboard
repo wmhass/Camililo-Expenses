@@ -18,9 +18,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4QP-W1-RwD">
+                                <rect key="frame" x="0.0" y="88" width="414" height="40"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dbe-xR-kfT">
+                                        <rect key="frame" x="143.5" y="6" width="127" height="29"/>
+                                        <segments>
+                                            <segment title="Weekly"/>
+                                            <segment title="Monthly"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" red="0.43598533160000003" green="0.94674744899999996" blue="0.014878811969999999" alpha="0.43354131709999999" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="dbe-xR-kfT" secondAttribute="bottom" constant="6" id="Nac-fd-UOp"/>
+                                    <constraint firstItem="dbe-xR-kfT" firstAttribute="top" secondItem="4QP-W1-RwD" secondAttribute="top" constant="6" id="Qak-gg-6lg"/>
+                                    <constraint firstItem="dbe-xR-kfT" firstAttribute="centerX" secondItem="4QP-W1-RwD" secondAttribute="centerX" id="XAc-Wj-dpf"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="vqk-za-qa5">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="128" width="414" height="768"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="YPH-a7-2lc">
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YPH-a7-2lc" id="hdr-qd-d4V">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="713-DQ-APt" id="fYK-wg-aHw"/>
+                                    <outlet property="delegate" destination="713-DQ-APt" id="hs5-bd-6e8"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -28,7 +60,10 @@
                             <constraint firstItem="h3a-Ea-hCi" firstAttribute="trailing" secondItem="vqk-za-qa5" secondAttribute="trailing" id="2xr-Mw-Dlh"/>
                             <constraint firstAttribute="bottom" secondItem="vqk-za-qa5" secondAttribute="bottom" id="7Om-ek-Yg8"/>
                             <constraint firstItem="vqk-za-qa5" firstAttribute="leading" secondItem="h3a-Ea-hCi" secondAttribute="leading" id="Hg8-nk-TEK"/>
-                            <constraint firstItem="vqk-za-qa5" firstAttribute="top" secondItem="h3a-Ea-hCi" secondAttribute="top" id="R5i-JJ-sQC"/>
+                            <constraint firstItem="4QP-W1-RwD" firstAttribute="trailing" secondItem="h3a-Ea-hCi" secondAttribute="trailing" id="Q2D-cx-tbe"/>
+                            <constraint firstItem="4QP-W1-RwD" firstAttribute="top" secondItem="h3a-Ea-hCi" secondAttribute="top" id="Wdg-vz-JAa"/>
+                            <constraint firstItem="vqk-za-qa5" firstAttribute="top" secondItem="4QP-W1-RwD" secondAttribute="bottom" id="kKV-au-ea0"/>
+                            <constraint firstItem="4QP-W1-RwD" firstAttribute="leading" secondItem="h3a-Ea-hCi" secondAttribute="leading" id="lT4-dD-cMo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="h3a-Ea-hCi"/>
                     </view>
@@ -39,10 +74,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="vqk-za-qa5" id="tQF-HC-5fu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pxm-5D-wcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="922" y="-87"/>
+            <point key="canvasLocation" x="921.73913043478262" y="-87.053571428571431"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rRB-3n-7Qb">
