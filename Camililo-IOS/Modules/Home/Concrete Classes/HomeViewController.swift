@@ -85,7 +85,6 @@ class HomeViewController: UIViewController {
 // MARK: - HomeView
 extension HomeViewController: HomeView {
     func presentToast(message: String, completion: @escaping (_ didTap: Bool) -> Void) {
-        // toast presented with multiple options and with a completion closure
         self.view.makeToast(message,
                             duration: 3,
                             position: ToastPosition.bottom,
@@ -110,30 +109,6 @@ extension HomeViewController: HomeView {
         } else {
             self.calendarPopup.removeFromSuperview()
         }
-        return
-        
-        
-        let datePicker = UIDatePicker()
-        datePicker.datePickerMode = .date
-        datePicker.frame.size.width = self.view.frame.width
-        datePicker.date = selectedDate ?? Date()
-        
-        let vc = UIViewController()
-        vc.view.backgroundColor = UIColor.clear
-        vc.view.addSubview(datePicker)
-        vc.preferredContentSize = datePicker.frame.size
-        
-        let editRadiusAlert = UIAlertController(title: "", message: title, preferredStyle: .actionSheet)
-        editRadiusAlert.setValue(vc, forKey: "contentViewController")
-        
-        let selectAction = UIAlertAction(title: "Select", style: .default) { action in
-            completion(datePicker.date)
-        }
-        
-        editRadiusAlert.addAction(selectAction)
-        editRadiusAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        
-        self.present(editRadiusAlert, animated: true)
     }
     
     func reloadCategories() {
